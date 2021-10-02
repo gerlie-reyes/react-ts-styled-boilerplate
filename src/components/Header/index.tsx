@@ -19,7 +19,7 @@ const Header = () => {
             {routesList.map((route) => {
               return (
                 <li>
-                  <Link to={route.path}>{route.name}</Link>
+                  <Link id={route.id} to={route.path}>{route.name}</Link>
                 </li>
               );
             })}

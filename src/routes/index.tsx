@@ -8,6 +8,7 @@ function Routes() {
       {routesList.map((route: IRoute) => {
         return (
           <Route
+            key={route.id}
             path={route.path}
             component={route.component}
             exact={route.exact}
@@ -19,6 +20,7 @@ function Routes() {
 }
 
 interface IRoute {
+  id: string,
   name?: string;
   exact?: boolean;
   path: string;
