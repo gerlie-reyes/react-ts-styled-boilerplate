@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/react-ts-styled-boilerplate/static/js/main.635b87eb.chunk.js",
+    "main.js.map": "/react-ts-styled-boilerplate/static/js/main.635b87eb.chunk.js.map",
+    "runtime-main.js": "/react-ts-styled-boilerplate/static/js/runtime-main.72c4d4ef.js",
+    "runtime-main.js.map": "/react-ts-styled-boilerplate/static/js/runtime-main.72c4d4ef.js.map",
+    "static/js/2.46176390.chunk.js": "/react-ts-styled-boilerplate/static/js/2.46176390.chunk.js",
+    "static/js/2.46176390.chunk.js.map": "/react-ts-styled-boilerplate/static/js/2.46176390.chunk.js.map",
+    "index.html": "/react-ts-styled-boilerplate/index.html",
+    "static/js/2.46176390.chunk.js.LICENSE.txt": "/react-ts-styled-boilerplate/static/js/2.46176390.chunk.js.LICENSE.txt",
+    "static/media/bannerBg.034dd75b.jpeg": "/react-ts-styled-boilerplate/static/media/bannerBg.034dd75b.jpeg",
+    "static/media/gigs.9f7ff8ad.png": "/react-ts-styled-boilerplate/static/media/gigs.9f7ff8ad.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72c4d4ef.js",
+    "static/js/2.46176390.chunk.js",
+    "static/js/main.635b87eb.chunk.js"
+  ]
+}
