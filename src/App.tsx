@@ -8,7 +8,7 @@ function App() {
    * depending on if the user is logged-in or not
    */
   return (
-    <Router>
+    <Router basename="/react-ts-styled-boilerplate/">
       <Routes />
     </Router>);
 }

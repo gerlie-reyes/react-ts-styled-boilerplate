@@ -2,10 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import { ThemeType } from './GlobalTheme';
 
 export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
-  // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-  
-  // font-display: swap - 
-  // Instructs the browser to use the fallback font to display the text until the custom font has fully downloaded.
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
   * {
     box-sizing: border-box;
@@ -14,11 +11,11 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   body, span, div, p, a, h1, h2, h3, label, div[data-list-heading-sec='topNavigation'] label, p[data-section='imgCaption'] span {
-    // font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   h4 {
-    // font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   body {
