@@ -11,7 +11,7 @@ export const StyledHeroBanner = styled.section<{ bgImage?: string }>`
   height: 100vh;
   gap: 50px;
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mdMobileMin}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
     flex-direction: column;
   }
 `;

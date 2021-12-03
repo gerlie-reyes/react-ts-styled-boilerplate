@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Nav, Logo, NavBarLinks } from './HeaderStyles';
 import MenuToggle from './MenuToggle';
-import { Link } from 'react-router-dom';
 import { routesList } from '../../routes/routes.list';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -14,12 +14,14 @@ const Header = () => {
 
         <MenuToggle open={open} setOpen={setOpen} />
 
-        <NavBarLinks open={open}  >
+        <NavBarLinks open={open}>
           <ul>
             {routesList.map((route) => {
               return (
-                <li>
-                  <Link id={route.id} to={route.path}>{route.name}</Link>
+                <li key={route.id}>
+                  <Link id={route.id} to={route.path}>
+                    {route.name}
+                  </Link>
                 </li>
               );
             })}

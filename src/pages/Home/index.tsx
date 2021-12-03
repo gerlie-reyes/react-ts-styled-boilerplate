@@ -5,10 +5,10 @@ import bgImage from '../../assets/images/bannerBg.jpeg';
 import HeroBanner from '../../components/Modules/HeroBanner';
 import { HomeBannerLeft, HomeBannerRight } from './HomeStyles';
 
-function Home() {
+const Home: React.FC = () => {
   return (
     <Layout isHomePage>
-      <HeroBanner banner={{id:'homepage-banner', bgImage: bgImage}}>
+      <HeroBanner banner={{ id: 'homepage-banner', bgImage: bgImage }}>
         <HomeBannerLeft>
           <h1>React-Typescript Starter</h1>
           <p>
@@ -30,6 +30,6 @@ function Home() {
       </HeroBanner>
     </Layout>
   );
-}
+};
 
 export default Home;

@@ -1,5 +1,5 @@
-import React from 'react'
-import { StyledHeroBanner } from './HeroBannerStyles'
+import React from 'react';
+import { StyledHeroBanner } from './HeroBannerStyles';
 
 const HeroBanner: React.FC<HeroBannerProps> = (props) => {
   const { children } = props;
@@ -8,11 +8,11 @@ const HeroBanner: React.FC<HeroBannerProps> = (props) => {
     <StyledHeroBanner bgImage={props.banner.bgImage}>
       {children}
     </StyledHeroBanner>
-  )
-}
+  );
+};
 
 interface HeroBannerProps {
-  banner: IBannerDetails
+  banner: IBannerDetails;
 }
 
-export default HeroBanner
+export default HeroBanner;

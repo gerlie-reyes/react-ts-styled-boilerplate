@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   align-items: center;
   position: relative;
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mdMobileMin}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -21,7 +21,7 @@ export const Logo = styled.div`
   text-transform: uppercase;
 `;
 
-export const StyledMenuToggle = styled.a<{open: boolean}>`
+export const StyledMenuToggle = styled.a<{ open: boolean }>`
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -38,12 +38,12 @@ export const StyledMenuToggle = styled.a<{open: boolean}>`
     border-radius: 10px;
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mdMobileMin}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
     display: flex;
   }
 `;
 
-export const NavBarLinks = styled.div<{open: boolean}>`
+export const NavBarLinks = styled.div<{ open: boolean }>`
   height: 100%;
 
   ul {
@@ -67,9 +67,9 @@ export const NavBarLinks = styled.div<{open: boolean}>`
     background-color: #555;
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.mdMobileMin}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
     width: 100%;
-    display: ${({ open }) => open ? 'flex' : 'none'};
+    display: ${({ open }) => (open ? 'flex' : 'none')};
 
     ul {
       width: 100%;

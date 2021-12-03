@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { routesList } from './routes.list';
 
-function Routes() {
+const Routes: React.FC = () => {
   return (
     <Switch>
       {routesList.map((route: IRoute) => {
@@ -17,10 +17,10 @@ function Routes() {
       })}
     </Switch>
   );
-}
+};
 
 interface IRoute {
-  id: string,
+  id: string;
   name?: string;
   exact?: boolean;
   path: string;
