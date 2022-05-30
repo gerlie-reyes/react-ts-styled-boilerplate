@@ -30,3 +30,7 @@ Visit http://localhost:3000/
 Workaround: `export NODE_OPTIONS=--openssl-legacy-provider`
 
 https://github.com/webpack/webpack/issues/14532
+
+
+### Getting a blank page after yarn start, without any error
+Workaround: Remove line 2 of package.json -> the config for github pages homepage
