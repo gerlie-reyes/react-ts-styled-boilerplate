@@ -23,3 +23,10 @@ Visit http://localhost:3000/
 `yarn start`  - Runs the app in the development mode.\
 `yarn test` - Launches the test runner in the interactive watch mode.\
 `yarn build` - Builds the app for production to the `build` folder.\
+
+
+## Debugging
+### issue Error message "error:0308010C:digital envelope routines::unsupported"
+Workaround: `export NODE_OPTIONS=--openssl-legacy-provider`
+
+https://github.com/webpack/webpack/issues/14532
