@@ -34,3 +34,5 @@ https://github.com/webpack/webpack/issues/14532
 
 ### Getting a blank page after yarn start, without any error
 Workaround: Remove line 2 of package.json -> the config for github pages homepage
+
+`"homepage": "http://gerlie-reyes.github.io/react-ts-styled-boilerplate/",`
