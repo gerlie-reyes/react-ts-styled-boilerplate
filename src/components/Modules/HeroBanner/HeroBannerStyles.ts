@@ -5,13 +5,14 @@ export const StyledHeroBanner = styled.section<{ bgImage?: string }>`
   background-size: cover;
   background-color: #000000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  padding: 80px 10px;
-  height: 100vh;
   gap: 50px;
+  padding: 80px 10px;
+  margin: 0 auto;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
-    flex-direction: column;
+  @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+    flex-direction: row;
+    height: 100vh;
   }
 `;

@@ -9,24 +9,24 @@ export const HomeBannerLeft = styled.div`
   }
 
   h1 {
-    font-size: 5em;
+    font-size: 2em;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
     h1 {
-      font-size: 2em;
+      font-size: 5em;
     }
   }
 `;
 
 export const HomeBannerRight = styled.div`
-  align-self: center;
+  align-self: flex-start;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
-    align-self: flex-start;
+  @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+    align-self: center;
+  }
 
-    img {
-      width: 100%;
-    }
+  img {
+    width: 100%;
   }
 `;

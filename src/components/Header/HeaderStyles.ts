@@ -4,13 +4,14 @@ export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.colors.brandBlack.header};
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
-    flex-direction: column;
+  @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
     align-items: flex-start;
+    flex-direction: row;
   }
 `;
 
@@ -25,7 +26,7 @@ export const StyledMenuToggle = styled.a<{ open: boolean }>`
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -38,50 +39,50 @@ export const StyledMenuToggle = styled.a<{ open: boolean }>`
     border-radius: 10px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
-    display: flex;
+  @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+    display: none;
   }
 `;
 
 export const NavBarLinks = styled.div<{ open: boolean }>`
   height: 100%;
+  width: 100%;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
 
-  ul {
+  @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+    width: auto;
     display: flex;
-    margin: 0;
-    padding: 0;
   }
 
-  li {
+  & ul {
+    width: 100%;
+    padding-top: 1rem;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+
+  & ul li {
     list-style: none;
+    text-align: center;
+
+    &:hover {
+      background-color: #555;
+    }
   }
 
-  li a {
+  & ul li a {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 1rem;
-  }
+    padding: 0.5rem 1rem;
 
-  li:hover {
-    background-color: #555;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
-    width: 100%;
-    display: ${({ open }) => (open ? 'flex' : 'none')};
-
-    ul {
-      width: 100%;
-      flex-direction: column;
-    }
-
-    ul li {
-      text-align: center;
-    }
-
-    ul li a {
-      padding: 0.5rem 1rem;
+    @media (min-width: ${({ theme }) => theme.breakpoints.mdMobileMin}) {
+      padding: 1rem;
     }
   }
 `;

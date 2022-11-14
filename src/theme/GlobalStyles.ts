@@ -10,7 +10,9 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
     padding: 0;
   }
 
-  body, span, div, p, a, h1, h2, h3, h4, label, div[data-list-heading-sec='topNavigation'] label, p[data-section='imgCaption'] span {
+  body, span, div, p, a, h1, h2, h3, h4, label, 
+  div[data-list-heading-sec='topNavigation'] label, 
+  p[data-section='imgCaption'] span {
     font-family: "Poppins", sans-serif;
   }
 
