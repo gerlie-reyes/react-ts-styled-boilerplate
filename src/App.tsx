@@ -8,7 +8,7 @@ const App: React.FC = () => {
    * depending on if the user is logged-in or not
    */
   return (
-    <Router basename='/react-ts-styled-boilerplate/'>
+    <Router basename='/'>
       <Routes />
     </Router>
   );
