@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Logo, NavBarLinks } from './HeaderStyles';
-import MenuToggle from './MenuToggle';
 import { routesList } from '../../routes/routes.list';
+import { Logo, Nav, NavBarLinks } from './HeaderStyles';
+import MenuToggle from './MenuToggle';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
